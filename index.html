@@ -125,7 +125,35 @@
       <!-- Puedes agregar más íconos como Facebook si lo deseas -->
     </section>
   </div>
+<center>
 
+  <!-- 1. Contenedor donde aparecerá el widget -->
+<section class="section mapa">
+  <h2>Lo que opinan nuestros huéspedes</h2>
+  <div id="place-overview" style="width:100%;min-height:420px;"></div>
+</section>
+
+<!-- 2. Carga de la librería Maps JS + Places -->
+<script
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA-Yd9j7wfFIi37Z_rgDVT0WH-CeJvl7c8&libraries=maps,places&callback=initPlace"
+  async defer></script>
+
+<!-- 3. Inicializamos el componente Place Overview -->
+<script>
+  function initPlace() {
+    // Esperamos a que la nueva librería 'places' esté lista
+    google.maps.importLibrary('places').then(({PlaceOverview}) => {
+      // Crea el widget con tu Place ID
+      new PlaceOverview({
+        placeId: 'ChIJ_wZU9Ei4iZYR_76Od_4Ti5I',   // <- reemplázalo por el real
+        language: 'es',
+        container: document.getElementById('place-overview')
+      });
+    });
+  }
+</script>
+
+</center>
   <footer>
     &copy; 2025 Cabañas Bosque del Rungue. Todos los derechos reservados.
   </footer>
