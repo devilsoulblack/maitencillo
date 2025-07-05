@@ -127,40 +127,16 @@
     </section>
   </div>
 <center>
-
-demo aqui 
-  <!-- 1. Contenedor donde aparecerá el widget -->
-<section class="section mapa">
-  <h2>Lo que opinan nuestros huéspedes</h2>
-  <div id="place-overview" style="width:100%;min-height:420px;"></div>
-</section>
-
-<!-- 2. Carga de la librería Maps JS + Places -->
-<script
-  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA-Yd9j7wfFIi37Z_rgDVT0WH-CeJvl7c8&libraries=maps,places&callback=initPlace"
-  async defer></script>
-
-<!-- 3. Inicializamos el componente Place Overview -->
-<script>
-  function initPlace() {
-    // Esperamos a que la nueva librería 'places' esté lista
-    google.maps.importLibrary('places').then(({PlaceOverview}) => {
-      // Crea el widget con tu Place ID
-      new PlaceOverview({
-        placeId: 'ChIJ_wZU9Ei4iZYR_76Od_4Ti5I',   // <- reemplázalo por el real
-        language: 'es',
-        container: document.getElementById('place-overview')
-      });
-    });
-  }
-</script>
-
+<!-- Elfsight Google Reviews | cabañas bosque del rungue -->
+<script src="https://static.elfsight.com/platform/platform.js" async></script>
+<div class="elfsight-app-505bb3be-b438-42d1-b802-c29389ef1bce" data-elfsight-app-lazy></div>
 </center>
 
 
 
  <div class="container">
 <center>
+  <h2>Como llegar ?</h2>
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6714.41572472945!2d-71.41209642356294!3d-32.707103859831584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9689b848f45406ff%3A0x928b13fe778ebeff!2sCaba%C3%B1as%20Bosques%20del%20Rungue!5e0!3m2!1ses!2scl!4v1751753894538!5m2!1ses!2scl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
 </center>>
